@@ -1,0 +1,254 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3F5D45;
+    --secondary-color: #EAF0ED;
+}
+
+body {
+    font-size: 16px;
+    font-family: "PingFang TC"
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 30px 8px 30px;
+}
+
+.menu li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.banner {
+    margin-bottom: 60px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    width: 300px;
+}
+
+.aside h2 {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.aside li {
+    margin-bottom: -1px;
+}
+
+.aside li a {
+    display: block;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.aside li a:hover {
+    background: var(--secondary-color);
+}
+
+.production-list {
+    width: 620px;
+    margin-bottom: 60px;
+}
+
+.production-list-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.production-list-card li {
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.production-list-card .tag {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    writing-mode: vertical-lr;
+    padding: 10px;
+}
+
+.production-list-card .heart {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    font-size: 20px;
+}
+
+/* 图片底部3px空隙问题：img下方空白缝隙产生的原因和去除方法 */
+.production-list-card img {
+    display: block;
+}
+
+.production-list-card .production-list-card-body {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+    color: var(--primary-color);
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.production-list-card .production-list-card-body h2 {
+    width: 173px;
+    font-weight: lighter;
+    border-right: 1px solid var(--secondary-color);
+}
+
+.production-list-card .production-list-card-body span {
+    width: 127px;
+    font-weight: bold;
+}
+
+.production-list-card .cart {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 0;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.production-list-card .cart:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.pagination-list li a {
+    display: block;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 16px 24px;
+    border: 1px solid var(--secondary-color);
+}
+
+.pagination-list li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.subscription {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 30px 112px;
+    display: flex;
+    align-items: center;
+}
+
+.subscription > img {
+    margin-right: 20px;
+}
+
+.subscription > h2 {
+    font-size: 24px;
+    margin-right: 124px;
+}
+
+.subscription .input-btn {
+    width: 316px;
+    height: 56px;
+    background: var(--secondary-color);
+    padding-top: 16px;
+}
+
+.subscription .email {
+    color: var(--primary-color);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.subscription .input-btn input {
+    width: 250px;
+    border: none;
+    background: var(--secondary-color);
+}
+
+.subscription .input-btn input:focus {
+    outline: none;
+}
+
+.subscription button {
+    color: var(--primary-color);
+    background: #FFE180;
+    border: none;
+    width: 64px;
+    height: 56px;
+}
+
+.footer {
+    background: var(--secondary-color);
+    color:  var(--primary-color);
+    padding: 30px 112px;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner .contact li:first-child {
+    margin-bottom: 115.5px;
+}
+
+.inner .contact .contact-text {
+    line-height: 24px;
+}
+
+.footer .tip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
