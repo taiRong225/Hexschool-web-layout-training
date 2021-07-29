@@ -1,0 +1,21 @@
+// @mixin pad {
+//     @media (max-width: 992px) {
+//         @content;
+//     }
+// }
+  
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+// 表單按鈕
+@mixin  formBtn {
+    display: block;
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    line-height: 22px;
+    padding: 8px 16px 8px 17px;
+    margin-left: 8px;
+}

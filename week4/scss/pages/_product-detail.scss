@@ -1,0 +1,106 @@
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .product-detail-img {
+        width: 730px;
+
+        @include mobile {
+            width: 345px;
+        }
+
+        .detail-img-top {
+            
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .img-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            
+            @include mobile {
+                flex-direction: column;
+            }
+
+            img {
+                width: 350px;
+            }
+
+            .img-group-first {
+               
+                @include mobile {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .product-detail-body {
+        width: 350px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 30px;
+
+        @include mobile {
+            width: 345px;
+            margin-left: 0;
+        }
+
+        .img-top {
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: bold;
+        }
+
+        .btn-group {
+            display: flex;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            
+            select {
+                width: 160px;
+                border: 1px solid $primary-color;
+                border-radius: 4px 0px 0px 4px;
+                padding-left: 16px;
+            }
+
+            a {
+                width: 190px;
+                border: 2px solid $primary-color;
+                border-radius: 0px 4px 4px 0px;
+                line-height: 22px;
+                text-align: center;
+                padding: 14px 15px;
+            }
+        }
+
+        .info {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 20px;
+
+            .h3 {
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,236 @@
+.member {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+        color: #848484;
+    }
+}
+
+.member-center {
+    width: 190px;
+
+    @include mobile {
+        width: 350px;
+        margin-bottom: 40px;
+        order: 1;
+    }
+
+    .m-none {
+        margin-bottom: 28px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .member-menu {
+
+        @include mobile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            color: #848484;
+            margin-bottom: 24px;
+    
+            &:hover {
+                border-bottom: 1px solid $primary-color;
+                color: $primary-color;
+            }
+
+            @include mobile {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.member-content {
+    width: 635px;
+    margin-right: 30px;
+
+    @include mobile {
+        width: 350px;
+        order: 3;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 22px;
+        border-bottom: 1px solid #818A91;
+        padding-bottom: 8px;
+    }
+
+    .form-group {
+        display: flex;
+        font-size: 16px;
+        line-height: 38px;
+        color: #818A91;
+        margin-bottom: 20px;
+
+        .form-label {
+            width: 95px;
+
+            @include mobile {
+                width: 90px;
+            }
+        }
+
+        .form-control {
+            width: 350px;
+            height: 38px;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            padding-left: 10px;
+
+            @include mobile {
+                width: 255px;
+            }
+        }
+
+        .form-control:read-only {
+            border: none;
+        }
+
+        .form-select {
+            width: 160px;
+            height: 38px;
+            border: 1px solid #CED4DA;
+            border-radius: 4px;
+            padding-left: 10px;
+            color: #818A91;
+        }
+
+        .form-select-sm {
+            width: 59px;
+            height: 38px;
+        }
+    }
+
+    .form-check {
+        width: 350px;
+        height: 38px;
+        margin-top: 12px;
+        position: relative;
+
+        .form-check-label {
+            line-height: 24px;
+            position: absolute;
+            top: 0;
+            left: 19px;
+        }
+
+        .form-check-label::before {
+            content: "";
+            position: absolute;
+            top: 4.5px;
+            left: -19px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #CED4DA;
+            border-radius: 3px;
+        }
+
+        .form-check-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            opacity: 0;
+        }
+
+        .form-check-input:checked + label::before {
+            content: "\2714";
+            border: none;
+            background: $primary-color;
+            color: $light-color;
+            font-size: 14px;
+        }
+    }
+
+    .form-group2 {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            width: 255px;
+        }
+
+        .row {
+            display: flex;
+        }
+    }
+
+    .submit-btn {
+        display: block;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 38px;
+        width: 160px;
+        height: 38px;
+        text-align: center;
+        margin-top: -4px;
+        margin-left: 95px;
+    }
+}
+
+.member-info {
+    width: 255px;
+
+    @include mobile {
+        order: 2;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    .no {
+        padding-left: 6px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .row {
+        display: flex;
+
+        .name {
+            width: 95px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #818A91;
+        }
+
+        .number {
+            width: 160px;
+            font-size: 16px;
+            line-height: 24px;
+            color:#818A91;
+        }
+    }
+
+    .remark {
+        font-size: 14px;
+        line-height: 21px;
+        color: #A5A5A5;
+    }
+}

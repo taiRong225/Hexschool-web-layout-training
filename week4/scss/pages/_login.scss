@@ -1,0 +1,86 @@
+.login {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 82px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 106px;
+    }
+
+    .login-img {
+        width: 730px;
+
+        @include mobile {
+            width: 345px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+
+        @include mobile {
+            margin-left: 0;
+            margin-top: 28px;
+        }
+
+        .h2 {
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                line-height: 22px;
+                margin-bottom: 4px;
+            }
+
+            input {
+                display: block;
+                width: 350px;
+                height: 38px;
+                line-height: 19px;
+                padding-left: 12px;
+                border: 1px solid #CED4DA;
+                border-radius: 4px;
+                color: #818A91;
+
+                @include mobile {
+                    width: 345px;
+                }
+            }
+        }
+
+        .form-btn-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .forget-btn {
+                display: block;
+                line-height: 24px;
+            }
+
+            .btn-group {
+                display: flex;
+                
+                .register-btn {
+                    @include formBtn;
+                }
+
+                .login-btn {
+                    @include formBtn;
+                }
+            }
+        }
+    }
+}

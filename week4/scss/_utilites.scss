@@ -1,0 +1,59 @@
+// 外距
+.mt-1 {
+    margin-top: 8px;
+}
+
+.mt-2 {
+    margin-top: 16px;
+}
+
+.mb-1 {
+    margin-bottom: 8px;
+}
+
+.mb-2 {
+    margin-bottom: 16px;
+}
+
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 32px;
+}
+
+.mt-6 {
+    margin-top: 48px;
+}
+
+.mb-10 {
+    margin-bottom: 80px;
+}
+
+.me-1 {
+    margin-right: 8px;
+}
+
+// 背景顏色
+.bg-gray {
+    background: $gray-color;
+}
+
+.bg-primary {
+    background: $primary-color;
+}
+
+// 文字顏色
+.text-primary {
+    color: $primary-color;
+}
+
+.text-white {
+    color: $light-color;
+}
+
+/* 圖片垂直對齊該行文字的置中位置 */
+.material-icons {
+    vertical-align: middle;
+}
