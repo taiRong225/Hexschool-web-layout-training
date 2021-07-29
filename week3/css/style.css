@@ -1,0 +1,123 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("https://fakeimg.pl/250x250/");
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  width: 100px;
+  text-align: center;
+}
+
+.menu li a {
+  display: block;
+  background: #3399ff;
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  background: orange;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-aside {
+  border: 2px solid black;
+  padding: 20px;
+  width: 75%;
+}
+
+.left-aside h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.left-aside p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.right-aside {
+  border: 2px solid black;
+  padding: 5px;
+  width: 20%;
+}
+
+.right-aside img {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* RWD CSS */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url("https://fakeimg.pl/150x150/");
+    margin-bottom: 10px;
+  }
+  .menu li {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-aside,
+  .right-aside {
+    width: 100%;
+  }
+  .left-aside {
+    margin-bottom: 20px;
+  }
+  .right-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
