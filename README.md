@@ -3,6 +3,7 @@
 六角學院 2021 程式體驗營
 
 舉辦單位：[六角學院 Hexschool](https://www.hexschool.com/ "六角學院 Hexschool")
+
 活動時間：2021/05/14 ～ 2021/06/30
 
 ## Project Link 作品連結
