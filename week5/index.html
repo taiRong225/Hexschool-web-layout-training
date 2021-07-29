@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS todolist 任務</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">TODO LIST</h1>
+        <div class="input">
+            <input type="text" class="todo" placeholder="新增待辦事項">
+            <button class="plus"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="main d-none">
+            <ul class="tab">
+                <li><a class="active" href="#" data-type="all">全部</a></li>
+                <li><a href="#" data-type="pendding">待完成</a></li>
+                <li><a href="#" data-type="complete">已完成</a></li>
+            </ul>
+            <ul class="todoList">
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list1">
+                        <label for="list1">把冰箱發霉的檸檬拿去丟</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list2" checked>
+                        <label for="list2">打電話叫媽媽匯款給我</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list3">
+                        <label for="list3">整理電腦資料夾</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list4" checked>
+                        <label for="list4">繳電費水費瓦斯費</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list5">
+                        <label for="list5">刪訊息</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <input type="checkbox" id="list7">
+                        <label for="list7">約ada禮拜四吃晚餐</label>
+                    </div>
+                    <i class="delete fas fa-times"></i>
+                </li>
+            </ul>
+            <div class="footer">
+                <p class="peddingTotal">5 個待完成項目</p>
+                <input type="button" class="clearCompleteBtn" value="清除已完成項目">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
