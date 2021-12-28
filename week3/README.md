@@ -1,4 +1,7 @@
 # Week3 RWD
+
+![image](https://user-images.githubusercontent.com/27886174/147539814-a96eec91-d05e-4c5a-b1be-a4ae181119dd.png)
+
 ## 學習要點
 1. CSS 權重 (優先權)
 	- *： `0分`
